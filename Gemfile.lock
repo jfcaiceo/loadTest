@@ -37,14 +37,26 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_resource-dirty (1.0.6)
+      activemodel (>= 5.2.0, < 7)
+      activeresource (~> 5.1.0)
+      activesupport (>= 5.2.0, < 7)
     activejob (6.0.3.3)
       activesupport (= 6.0.3.3)
       globalid (>= 0.3.6)
     activemodel (6.0.3.3)
       activesupport (= 6.0.3.3)
+    activemodel-serializers-xml (1.0.2)
+      activemodel (> 5.x)
+      activesupport (> 5.x)
+      builder (~> 3.1)
     activerecord (6.0.3.3)
       activemodel (= 6.0.3.3)
       activesupport (= 6.0.3.3)
+    activeresource (5.1.0)
+      activemodel (>= 5.0, < 7)
+      activemodel-serializers-xml (~> 1.0)
+      activesupport (>= 5.0, < 7)
     activestorage (6.0.3.3)
       actionpack (= 6.0.3.3)
       activejob (= 6.0.3.3)
@@ -70,6 +82,10 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-activeresource (0.1.0)
+      activeresource (~> 5.1.0)
+      devise (>= 4.7.1, < 5)
+      rails (>= 5.0.0, < 7)
     erubi (1.9.0)
     ffi (1.13.1)
     globalid (0.4.2)
@@ -170,9 +186,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_resource-dirty (= 1.0.6)
+  activeresource
   bootsnap (>= 1.4.2)
   byebug
   devise
+  devise-activeresource (= 0.1.0)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   mysql2

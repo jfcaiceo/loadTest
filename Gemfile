@@ -12,6 +12,19 @@ gem 'puma', '~> 4.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'devise'
+gem 'activeresource'
+gem 'active_resource-dirty', '1.0.6'
+gem 'devise-activeresource', '0.1.0'
+
+# gem 'rack-mini-profiler'
+
+# For memory profiling
+# gem 'memory_profiler'
+
+# For call-stack profiling flamegraphs
+# gem 'flamegraph'
+# gem 'stackprof'
+
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
